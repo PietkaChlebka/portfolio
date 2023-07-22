@@ -9,11 +9,11 @@ function Home() {
   return (
     <div>
       <HomeHeader />
-      <ThreeColumns />
+      {/* <ThreeColumns />
       <SimpleSteps />
       <AboutUs />
       <WhomWeHelp />
-      <Foot />
+      <Foot /> */}
     </div>
   );
 }
