@@ -1,5 +1,5 @@
 import { Link as NavigationLink } from "react-router-dom";
-import styles from "./style.module.scss";
+import styles from "./styles.module.scss";
 import decorationImg from "../../../assets/Decoration.svg";
 
 function HomeHeader() {
