@@ -35,25 +35,26 @@
     .buttonContainer {
       display: flex;
       justify-content: space-around;
+      align-items: center;
       width: 38vw;
-      transform: translateY(-25px);
 
-      button {
-        border: solid lighten($black, 40%) 2px;
-        background: transparent;
+      a {
         width: 16vw;
-        height: 15vh;
+        text-decoration: none;
 
-        a {
-          text-decoration: none;
+        button {
+          border: solid $grey 2px;
+          background: transparent;
           font-family: $font-primary, light;
           font-size: 2.2rem;
-          color: lighten($black, 40%);
+          color: $grey;
           text-align: center;
           text-transform: uppercase;
           padding: 10px;
           width: 100%;
           display: block;
+          outline: none;
+          cursor: pointer;
         }
       }
     }
