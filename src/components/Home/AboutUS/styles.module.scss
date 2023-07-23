@@ -1,0 +1,50 @@
+@import "../../../scss/main.scss";
+
+.aboutUsSection {
+  width: 100%;
+  display: flex;
+
+  .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $light-grey;
+
+    .textContainer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      width: 35vw;
+
+      .header {
+        font-family: $font-primary;
+        font-size: 2.4rem;
+        padding-bottom: 2vw;
+      }
+
+      .decoration {
+        padding-bottom: 2vw;
+      }
+
+      p {
+        font-family: $font-primary;
+        font-size: 1.9rem;
+        text-align: center;
+        padding-bottom: 2vw;
+      }
+
+      .signature {
+        display: flex;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .people {
+    width: 100%;
+    background-image: url(../../../assets/People.jpg);
+    aspect-ratio: 1;
+  }
+}

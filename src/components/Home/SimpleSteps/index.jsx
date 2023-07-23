@@ -6,7 +6,6 @@ import search from "../../../assets/Icon-3.svg";
 import refresh from "../../../assets/Icon-4.svg";
 import { Link as NavigationLink } from "react-router-dom";
 import { Button } from "react-scroll";
-import { Link as ScrollLink } from "react-scroll";
 
 function SimpleSteps() {
   return (
