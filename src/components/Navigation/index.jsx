@@ -18,7 +18,7 @@ function Navigation() {
           <ScrollLink to="">Start</ScrollLink>
         </li>
         <li className={styles.menuElement}>
-          <ScrollLink to="threeColumns">O co chodzi?</ScrollLink>
+          <ScrollLink to="simpleSteps">O co chodzi?</ScrollLink>
         </li>
         <li className={styles.menuElement}>
           <ScrollLink to="aboutUs">O nas</ScrollLink>

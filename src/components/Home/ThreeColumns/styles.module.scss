@@ -16,6 +16,7 @@
       font-family: $font-primary, light;
       font-size: 5rem;
       padding-bottom: 2vw;
+      color: $grey;
     }
 
     .columnHeader {
@@ -23,12 +24,14 @@
       font-size: 1.15rem;
       text-transform: uppercase;
       padding-bottom: 2vw;
+      color: $grey;
     }
 
     .columnContent {
       text-align: center;
       font-family: $font-secondary;
       line-height: 1.75rem;
+      color: $grey;
     }
   }
 }
