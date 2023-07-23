@@ -18,10 +18,14 @@ function Navigation() {
           <ScrollLink to="">Start</ScrollLink>
         </li>
         <li className={styles.menuElement}>
-          <ScrollLink to="simpleSteps">O co chodzi?</ScrollLink>
+          <ScrollLink to="simpleSteps" smooth>
+            O co chodzi?
+          </ScrollLink>
         </li>
         <li className={styles.menuElement}>
-          <ScrollLink to="aboutUs">O nas</ScrollLink>
+          <ScrollLink to="aboutUs" smooth>
+            O nas
+          </ScrollLink>
         </li>
         <li className={styles.menuElement}>
           <ScrollLink to="whoWeHelp">Fundacja i organizacje</ScrollLink>
