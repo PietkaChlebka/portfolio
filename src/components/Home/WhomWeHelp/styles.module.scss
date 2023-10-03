@@ -5,7 +5,8 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 5vw;
+  min-height: 100vh;
+  padding: 3vw 5vw 1vw;
 
   .contentContainer {
     display: flex;
@@ -44,7 +45,7 @@
         margin-bottom: 2vw;
 
         &.active {
-          border: solid $grey 2px;
+          border: solid $grey 1px;
         }
       }
     }
@@ -53,16 +54,28 @@
       font-family: $font-primary;
       font-size: 1.4rem;
       color: $grey;
-      padding: 3vw;
+      padding: 2vw;
       width: 40vw;
     }
 
     .orgContainer {
-      div {
+      min-height: 317px;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 2vw;
+
+      .sampleElement {
+        font-family: $font-secondary;
         display: flex;
         justify-content: space-between;
         width: 70vw;
-        padding: 0.75vw;
+        padding: 1vw 0.75vw 1.8vw;
+        border-bottom: solid $grey 1px;
+
+        &:last-child {
+          border: none;
+        }
 
         .orgDetails {
           font-family: $font-secondary, light;
@@ -70,6 +83,7 @@
           font-size: 1.1rem;
           width: 40vw;
           text-align: right;
+          align-self: center;
         }
 
         .orgInfoContainer {
@@ -80,6 +94,7 @@
             font-family: $font-secondary, light;
             color: $grey;
             font-size: 1.65rem;
+            padding-bottom: 0.5vw;
           }
 
           .orgMotto {
@@ -87,6 +102,27 @@
             color: $grey;
           }
         }
+      }
+    }
+
+    .pages {
+      display: flex;
+      justify-content: space-around;
+      gap: 1rem;
+      width: fit-content;
+
+      .pageBtn {
+        padding: 1vh;
+        outline: none;
+        border: none;
+        background-color: $white;
+        font-size: 1.1rem;
+        font-family: $font-primary;
+        cursor: pointer;
+      }
+
+      .active {
+        border: solid $grey 1px;
       }
     }
   }

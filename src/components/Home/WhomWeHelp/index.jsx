@@ -143,6 +143,7 @@ function WhomWeHelp() {
             onClick={() => {
               setElements(fundations);
               setActiveBtn("fundations");
+              setCurrentPage(1);
             }}
           >
             Fundacjom
@@ -155,6 +156,7 @@ function WhomWeHelp() {
             onClick={() => {
               setElements(organizations);
               setActiveBtn("organizations");
+              setCurrentPage(1);
             }}
           >
             Organizacjom <br />
@@ -168,6 +170,7 @@ function WhomWeHelp() {
             onClick={() => {
               setElements(gatherings);
               setActiveBtn("gatherings");
+              setCurrentPage(1);
             }}
           >
             Lokalnym zbiórkom
@@ -181,7 +184,7 @@ function WhomWeHelp() {
               currentPage * postsPerPage
             )
             .map((item, index) => (
-              <div key={index}>
+              <div key={index} className={styles.sampleElement}>
                 <div className={styles.orgInfoContainer}>
                   <p className={styles.orgHeader}>
                     {elements.title} {item.name}
@@ -191,6 +194,24 @@ function WhomWeHelp() {
                 <p className={styles.orgDetails}>{item.info}</p>
               </div>
             ))}
+        </div>
+        <div className={styles.pages}>
+          {Array.from(
+            { length: Math.ceil(elements.items.length / 3) },
+            (_, index) => (
+              <button
+                className={classNames([
+                  styles.pageBtn,
+                  currentPage === index + 1 ? styles.active : "",
+                ])}
+                onClick={() => {
+                  setCurrentPage(index + 1);
+                }}
+              >
+                {index + 1}
+              </button>
+            )
+          )}
         </div>
       </div>
     </section>

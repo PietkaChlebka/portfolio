@@ -8,7 +8,7 @@ function AboutUs() {
       <div className={styles.contentContainer}>
         <div className={styles.textContainer}>
           <h3 className={styles.header}>O nas</h3>
-          <img src={decorationImg} className={styles.decoration} />
+          <img src={decorationImg} className={styles.decoration} fill />
           <p>
             Nori grape silver beet broccoli kombu beet greens fava bean potato
             quandong celery. Bunya nuts black-eyed pea prairie turnip leek
