@@ -196,22 +196,24 @@ function WhomWeHelp() {
             ))}
         </div>
         <div className={styles.pages}>
-          {Array.from(
-            { length: Math.ceil(elements.items.length / 3) },
-            (_, index) => (
-              <button
-                className={classNames([
-                  styles.pageBtn,
-                  currentPage === index + 1 ? styles.active : "",
-                ])}
-                onClick={() => {
-                  setCurrentPage(index + 1);
-                }}
-              >
-                {index + 1}
-              </button>
-            )
-          )}
+          {elements.items.length <= 3
+            ? null
+            : Array.from(
+                { length: Math.ceil(elements.items.length / 3) },
+                (_, index) => (
+                  <button
+                    className={classNames([
+                      styles.pageBtn,
+                      currentPage === index + 1 ? styles.active : "",
+                    ])}
+                    onClick={() => {
+                      setCurrentPage(index + 1);
+                    }}
+                  >
+                    {index + 1}
+                  </button>
+                )
+              )}
         </div>
       </div>
     </section>
