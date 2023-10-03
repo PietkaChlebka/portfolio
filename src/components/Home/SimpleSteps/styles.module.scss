@@ -1,0 +1,94 @@
+@import "../../../scss/main.scss";
+
+.stepsContainer {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 3.2vw;
+  }
+
+  .headerSection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    h3 {
+      font-size: 2.4rem;
+      font-family: $font-primary;
+      padding-bottom: 2vw;
+      color: $grey;
+    }
+  }
+
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 4vw 15vw;
+    width: 100%;
+    background-color: $light-grey;
+
+    .iconsContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 8vw;
+      text-align: center;
+
+      img {
+        margin-bottom: 0.6vw;
+      }
+
+      hr {
+        margin-bottom: 0.6vw;
+        width: 3vw;
+      }
+
+      p {
+        color: #3c3c3c;
+        font-family: $font-primary;
+      }
+
+      .elementHeader {
+        margin-bottom: 0.2vw;
+      }
+    }
+  }
+
+  .btnSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 3.2vw;
+
+    .btnContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 38vw;
+
+      a {
+        width: 16vw;
+        text-decoration: none;
+
+        button {
+          border: solid $grey 2px;
+          background: transparent;
+          font-family: $font-primary, light;
+          font-size: 2.2rem;
+          color: $grey;
+          text-align: center;
+          text-transform: uppercase;
+          padding: 10px;
+          width: 100%;
+          display: block;
+          outline: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

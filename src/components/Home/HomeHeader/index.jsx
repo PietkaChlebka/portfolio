@@ -1,5 +1,5 @@
 import { Link as NavigationLink } from "react-router-dom";
-import styles from "./style.module.scss";
+import styles from "./styles.module.scss";
 import decorationImg from "../../../assets/Decoration.svg";
 
 function HomeHeader() {
@@ -16,16 +16,16 @@ function HomeHeader() {
           alt="decoration"
         />
         <div className={styles.buttonContainer}>
-          <button>
-            <NavigationLink to="/login">
+          <NavigationLink to="/login">
+            <button>
               Oddaj
               <br />
               rzeczy
-            </NavigationLink>
-          </button>
-          <button>
-            <NavigationLink to="/login">Zorganizuj zbiórkę</NavigationLink>
-          </button>
+            </button>
+          </NavigationLink>
+          <NavigationLink to="/login">
+            <button>Zorganizuj zbiórkę</button>
+          </NavigationLink>
         </div>
       </div>
     </div>

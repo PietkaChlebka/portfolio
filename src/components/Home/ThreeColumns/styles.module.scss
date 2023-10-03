@@ -1,0 +1,37 @@
+@import "../../../scss/main.scss";
+
+.columnsContainer {
+  background-image: url(../../../assets/3columns.png);
+  display: flex;
+  justify-content: space-around;
+  padding: 4vw;
+
+  .columnsElement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18vw;
+
+    h3 {
+      font-family: $font-primary, light;
+      font-size: 5rem;
+      padding-bottom: 2vw;
+      color: $grey;
+    }
+
+    .columnHeader {
+      font-family: $font-primary;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      padding-bottom: 2vw;
+      color: $grey;
+    }
+
+    .columnContent {
+      text-align: center;
+      font-family: $font-secondary;
+      line-height: 1.75rem;
+      color: $grey;
+    }
+  }
+}
