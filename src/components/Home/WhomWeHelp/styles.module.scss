@@ -1,0 +1,93 @@
+@import "../../../scss/main.scss";
+
+.helpInfoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 5vw;
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+
+    .header {
+      font-family: $font-primary;
+      font-size: 2.4rem;
+      padding-bottom: 2vw;
+      color: $grey;
+    }
+
+    .decoration {
+      padding-bottom: 2vw;
+    }
+
+    .btnContainer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 50vw;
+
+      button {
+        font-family: $font-primary;
+        font-size: 1.5rem;
+        color: $grey;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        width: 12vw;
+        height: 6.75rem;
+        padding: 1vw;
+        margin-bottom: 2vw;
+
+        &.active {
+          border: solid $grey 2px;
+        }
+      }
+    }
+    .description {
+      text-align: center;
+      font-family: $font-primary;
+      font-size: 1.4rem;
+      color: $grey;
+      padding: 3vw;
+      width: 40vw;
+    }
+
+    .orgContainer {
+      div {
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+        padding: 0.75vw;
+
+        .orgDetails {
+          font-family: $font-secondary, light;
+          color: $grey;
+          font-size: 1.1rem;
+          width: 40vw;
+          text-align: right;
+        }
+
+        .orgInfoContainer {
+          display: flex;
+          flex-direction: column;
+
+          .orgHeader {
+            font-family: $font-secondary, light;
+            color: $grey;
+            font-size: 1.65rem;
+          }
+
+          .orgMotto {
+            font-family: $font-secondary, light, Italic;
+            color: $grey;
+          }
+        }
+      }
+    }
+  }
+}
