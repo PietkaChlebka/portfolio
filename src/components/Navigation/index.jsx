@@ -28,7 +28,9 @@ function Navigation() {
           </ScrollLink>
         </li>
         <li className={styles.menuElement}>
-          <ScrollLink to="whoWeHelp">Fundacja i organizacje</ScrollLink>
+          <ScrollLink to="whoWeHelp" smooth>
+            Fundacja i organizacje
+          </ScrollLink>
         </li>
         <li className={styles.menuElement}>
           <ScrollLink to="footer">Kontakt</ScrollLink>

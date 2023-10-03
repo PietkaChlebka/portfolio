@@ -130,7 +130,7 @@ function WhomWeHelp() {
   const postsPerPage = 3;
 
   return (
-    <section className={styles.helpInfoSection}>
+    <section className={styles.helpInfoSection} name="whoWeHelp">
       <div className={styles.contentContainer}>
         <h3 className={styles.header}>Komu pomagamy?</h3>
         <img className={styles.decoration} src={decorationImg} />
