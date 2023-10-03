@@ -12,6 +12,7 @@ function Home() {
       <ThreeColumns />
       <SimpleSteps />
       <AboutUs />
+      <WhomWeHelp />
     </div>
   );
 }
